@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import { Route } from 'react-router-dom'
+import './App.css'
+import { fetchAllRecipes } from '../../apiCalls'
+import NavBar from '../NavBar/NavBar'
+import Recipes from '../Recipes/Recipes'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      recipes: []
+    }
+  }
+
+  componentDidMount() {
+    fetchAllRecipes()
+    .then(recipes => this.setState({ recipes: recipes })) 
+  }
+  
+  render() {
+    return (
+      <main className="app">
+        <NavBar />
+        <Route exact path='/' render={() => <Recipes recipes={ this.state.recipes } /> } /> 
+      </main>
+    )
+  }
 }
 
-export default App;
+export default App
