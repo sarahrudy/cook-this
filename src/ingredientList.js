@@ -1,4 +1,5 @@
 export const ingredientList = [
+  '',
   'pasta',
   'tomatoes',
   'feta',
@@ -19,4 +20,7 @@ export const ingredientList = [
   'milk',
   'spinach',
   'olive oil',
+  'basil',
+  'cucumber',
+  'garbonzo beans',
 ]
