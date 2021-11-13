@@ -4,6 +4,7 @@ import './App.css'
 import { fetchAllRecipes } from '../../apiCalls'
 import NavBar from '../NavBar/NavBar'
 import Recipes from '../Recipes/Recipes'
+import Dropdown from '../Dropdown/Downdown'
 
 class App extends Component {
   constructor() {
@@ -22,6 +23,7 @@ class App extends Component {
     return (
       <main className="app">
         <NavBar />
+        <Dropdown />
         <Route exact path='/' render={() => <Recipes recipes={ this.state.recipes } /> } /> 
       </main>
     )
