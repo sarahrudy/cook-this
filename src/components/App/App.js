@@ -4,7 +4,8 @@ import './App.css'
 import NavBar from '../NavBar/NavBar'
 import Recipes from '../Recipes/Recipes'
 import Dropdown from '../Dropdown/Dropdown'
-import { fetchRecipesByIngredients } from '../../apiCalls'
+import Ideas from '../Ideas/Ideas'
+import { fetchRecipesByIngredients, fetchRecipesBySpecificIngredient } from '../../apiCalls'
 import { useHistory } from 'react-router-dom'
 
 const App = () => {
@@ -27,7 +28,10 @@ const App = () => {
       <main className="app">
         <NavBar />
         <Switch >
-          <Route exact path='/' render={() => <Dropdown handleSubmit={ handleSubmit } /> } />
+          <>
+            <Route exact path='/' render={() => <Dropdown handleSubmit={ handleSubmit } /> } />
+            <Route exact path='/' render={() => <Ideas /> } />
+          </>
           <Route exact path='/recipes' render={() => <Recipes searchedRecipes={ searchedRecipes } /> } />
         </Switch>
       </main>
