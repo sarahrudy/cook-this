@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './Dropdown.css'
 import { ingredientList } from '../../ingredientList'
 
 const Dropdown = ({ handleSubmit }) => {
-  const ingredients = ingredientList.map(ingredient => {
-    return (
-      <option value={ ingredient }>{ ingredient }</option>
-    )
-  }) 
-
   const [ ingredient1, setIngredient1] = useState(null)
   const [ ingredient2, setIngredient2] = useState(null)
   const [ ingredient3, setIngredient3] = useState(null)
+
+  const ingredients = ingredientList.map((ingredient, i) => {
+    return (
+      <option value={ ingredient } key={ i }>{ ingredient }</option>
+    )
+  })
 
   return (
     <div>
@@ -25,7 +25,7 @@ const Dropdown = ({ handleSubmit }) => {
       <select onChange={ event => setIngredient3(event.target.value) }>
         { ingredients }
       </select>
-      <button onClick={() => handleSubmit(ingredient1, ingredient2, ingredient3) }>SEARCH RECIPES</button>
+      <button onClick={() => handleSubmit( ingredient1, ingredient2, ingredient3 ) }>SEARCH RECIPES</button>
     </div>
   )
 }

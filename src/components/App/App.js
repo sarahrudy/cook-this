@@ -26,8 +26,8 @@ const App = () => {
     return (
       <main className="app">
         <NavBar />
-        <Dropdown handleSubmit={ handleSubmit } /> 
-        <Recipes searchedRecipes={ searchedRecipes } /> 
+        <Route exact path='/' render={() => <Dropdown handleSubmit={ handleSubmit } /> } />
+        <Route exact path='/recipes' render={() => <Recipes searchedRecipes={ searchedRecipes } /> } />
       </main>
     )
   }

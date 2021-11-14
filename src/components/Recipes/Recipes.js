@@ -15,7 +15,8 @@ const Recipes  = ({ searchedRecipes }) => {
       </div>
     )
   })
-  return(
+
+  return (
     <div className='recipes-container'>{ recipeCard }</div>
   )
 }
