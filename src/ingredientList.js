@@ -23,4 +23,6 @@ export const ingredientList = [
   'basil',
   'cucumber',
   'garbonzo beans',
+  'salad',
+  'fruit',
 ]
