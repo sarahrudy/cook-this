@@ -8,3 +8,15 @@
 .recipes {
   margin: 20px;
 }
+
+.recipes-btn {
+  margin: 20px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+@media (hover:hover) {
+  .recipes-btn:hover {
+    color: orangered;
+  }
+}

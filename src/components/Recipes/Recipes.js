@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Recipes.css'
 import RecipeCard from '../RecipeCard/RecipeCard'
 
@@ -15,9 +16,14 @@ const Recipes  = ({ searchedRecipes }) => {
       </div>
     )
   })
-
+  
   return (
+    <>
     <div className='recipes-container'>{ recipeCard }</div>
+    <Link to='/'>
+      <button className='recipes-btn'>CLICK TO GO HOME</button>
+    </Link>
+    </>
   )
 }
 
