@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: scroll;
   background: white;
   border-radius: 5px;
   border: 1px solid black;
   width: 90%;
   margin-top: 20px;
+  padding: 0;
 }
 
 .img-container {
