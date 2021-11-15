@@ -9,6 +9,7 @@ import healthyImg from '../../images/diet.png'
 
 const Ideas = ({ handleImageClick }) => {
   return (
+    <>
     <section className='ideas-container'>
       <p className='ideas-title'>Need some ideas? Click on one of the images below:</p>
       <div className='img-container'>
@@ -35,6 +36,10 @@ const Ideas = ({ handleImageClick }) => {
         </Link>
       </div>
     </section>
+      <Link to='/'>
+      <button className='recipes-btn'>CLICK TO GO HOME</button>
+      </Link>
+    </>
   );
 };
 
