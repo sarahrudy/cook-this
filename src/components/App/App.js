@@ -8,6 +8,7 @@ import Ideas from '../Ideas/Ideas'
 import Error from '../Error/Error'
 import { fetchRecipesByIngredients } from '../../apiCalls'
 import { useHistory } from 'react-router-dom'
+import loadingIcon from '../../images/loading.gif'
 
 const App = () => {
   const history = useHistory()
@@ -33,6 +34,7 @@ const App = () => {
     return (
       <main className="app">
         <NavBar />
+          {!searchedRecipes && <img className="loading-icon" src={loadingIcon} alt="page is loading" />}
         <Switch >
           <Route exact path='/'><Dropdown handleSubmit={ handleSubmit }/></Route>
           <Route exact path='/ideas'><Ideas handleImageClick={ handleImageClick}/></Route>
