@@ -37,7 +37,7 @@ const Ideas = ({ handleImageClick }) => {
       </div>
     </section>
       <Link to='/'>
-      <button className='recipes-btn'>CLICK TO GO HOME</button>
+      <button className='recipes-btn'>HOME</button>
       </Link>
     </>
   );

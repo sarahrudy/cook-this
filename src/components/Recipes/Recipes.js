@@ -21,7 +21,7 @@ const Recipes  = ({ searchedRecipes }) => {
     <>
     <div className='recipes-container'>{ recipeCard }</div>
     <Link to='/'>
-      <button className='recipes-btn'>CLICK TO GO HOME</button>
+      <button className='recipes-btn'>HOME</button>
     </Link>
     </>
   )
