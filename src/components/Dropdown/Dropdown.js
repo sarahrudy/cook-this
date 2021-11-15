@@ -14,18 +14,18 @@ const Dropdown = ({ handleSubmit }) => {
   })
 
   return (
-    <div>
-      <h1>Choose 3 ingredients:</h1>
-      <select onChange={ event => setIngredient1(event.target.value) }>
-        { ingredients }
-      </select>
-      <select onChange={ event => setIngredient2(event.target.value) }>
-        { ingredients }
-      </select>
-      <select onChange={ event => setIngredient3(event.target.value) }>
-        { ingredients }
-      </select>
-      <button onClick={() => handleSubmit( ingredient1, ingredient2, ingredient3 ) }>SEARCH RECIPES</button>
+    <div className='dropdown-container'>
+      <h1 className='dropdown-title'>Choose 3 ingredients:</h1>
+        <select className='dropdown-box' onChange={ event => setIngredient1(event.target.value) }>
+          { ingredients }
+        </select>
+        <select className='dropdown-box' onChange={ event => setIngredient2(event.target.value) }>
+          { ingredients }
+        </select>
+        <select className='dropdown-box' onChange={ event => setIngredient3(event.target.value) }>
+          { ingredients }
+        </select>
+      <button className='dropdown-btn' onClick={() => handleSubmit( ingredient1, ingredient2, ingredient3 ) }>SEARCH RECIPES</button>
     </div>
   )
 }
