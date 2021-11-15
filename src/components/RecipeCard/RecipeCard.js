@@ -6,12 +6,12 @@ const RecipeCard = ({ label, image, url }) => {
 
   return (
     <div className='recipe-card'>
-      <article className='recipe-card-container'>
-        <a href={ url } target="_blank" rel="noopener noreferrer">
-        <p className='recipe-card-title'>{ label }</p>
-        <img className='recipe-card-image' src={ image } alt='recipe'></img>
-        </a>
-      </article>
+      <a href={ url } target="_blank" rel="noopener noreferrer">
+        <article className='recipe-card-container'>
+          <p className='recipe-card-title'>{ label }</p>
+          <img className='recipe-card-image' src={ image } alt='recipe'></img>
+        </article>
+      </a>
     </div>
   )
 }
