@@ -5,6 +5,7 @@ import NavBar from '../NavBar/NavBar'
 import Recipes from '../Recipes/Recipes'
 import Dropdown from '../Dropdown/Dropdown'
 import Ideas from '../Ideas/Ideas'
+import Error from '../Error/Error'
 import { fetchRecipesByIngredients } from '../../apiCalls'
 import { useHistory } from 'react-router-dom'
 
@@ -36,8 +37,7 @@ const App = () => {
           <Route exact path='/'><Dropdown handleSubmit={ handleSubmit }/></Route>
           <Route exact path='/ideas'><Ideas handleImageClick={ handleImageClick}/></Route>
           <Route exact path='/recipes'><Recipes searchedRecipes={ searchedRecipes } /></Route>
-          <Redirect to='/'/>
-          {/* <Route component={ Error } /> */}
+          <Route component={ Error } />
         </Switch>
       </main>
     )
