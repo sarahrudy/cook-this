@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom'
 import './App.css'
 import NavBar from '../NavBar/NavBar'
 import Recipes from '../Recipes/Recipes'
@@ -33,9 +33,11 @@ const App = () => {
       <main className="app">
         <NavBar />
         <Switch >
-          <Route exact path='/' render={() => <Dropdown handleSubmit={ handleSubmit } /> } />
-          <Route exact path='/ideas' render={() => <Ideas handleImageClick={ handleImageClick} /> } />
-          <Route exact path='/recipes' render={() => <Recipes searchedRecipes={ searchedRecipes } /> } />
+          <Route exact path='/'><Dropdown handleSubmit={ handleSubmit }/></Route>
+          <Route exact path='/ideas'><Ideas handleImageClick={ handleImageClick}/></Route>
+          <Route exact path='/recipes'><Recipes searchedRecipes={ searchedRecipes } /></Route>
+          <Redirect to='/'/>
+          {/* <Route component={ Error } /> */}
         </Switch>
       </main>
     )
