@@ -10,7 +10,7 @@ import healthyImg from '../../images/diet.png'
 const Ideas = ({ handleImageClick }) => {
   return (
     <section className='ideas-container'>
-      <p className='ideas-p'>Need some ideas? Click on one of the images below:</p>
+      <p className='ideas-title'>Need some ideas? Click on one of the images below:</p>
       <div className='img-container'>
         <Link to='/recipes'>
           <img src={ smoothieImg } className='ideas-img' alt='smoothie'

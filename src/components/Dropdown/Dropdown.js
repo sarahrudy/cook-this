@@ -9,7 +9,7 @@ const Dropdown = ({ handleSubmit }) => {
 
   const ingredients = ingredientList.map((ingredient, i) => {
     return (
-      <option value={ ingredient } key={ i }>{ ingredient }</option>
+      <option className='option' value={ ingredient } key={ i }>{ ingredient }</option>
     )
   })
 
