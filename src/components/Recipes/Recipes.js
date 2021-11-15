@@ -11,7 +11,7 @@ const Recipes  = ({ searchedRecipes }) => {
           key={ i }
           label={ recipe.recipe.label }
           image={ recipe.recipe.image }
-          // add onClick here to take user to url of recipe on web
+          url={ recipe.recipe.url }
         />
       </div>
     )
