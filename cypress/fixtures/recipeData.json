@@ -1,0 +1,28 @@
+{
+  "hits": [
+    {
+    "recipe": {
+      "label": "Sweet Potato Smoothie",
+      "image": "https://www.edamam.com/web-img/aaf/aaf667d7997529ae03a6bd6e4fe2c5df.jpg",
+      "source": "Food52",
+      "url": "https://food52.com/recipes/55110-sweet-potato-smoothie"
+      }
+    },
+    {
+    "recipe": {
+      "label": "Smoothie jellies with ice cream",
+      "image": "https://www.edamam.com/web-img/7da/7da8331c791a75f8a02fb7cb07171e85.jpg",
+      "source": "BBC Good Food",
+      "url": "http://www.bbcgoodfood.com/recipes/4504/smoothie-jellies-with-ice-cream"
+      }
+    },
+    {
+    "recipe": {
+      "label": "Pumpkin Apple Oats Smoothie",
+      "image": "https://www.edamam.com/web-img/b76/b76b548560ee23a7009439cfab469492.png",
+      "source": "The Daily Meal",
+      "url": "http://www.thedailymeal.com/recipes/pumpkin-apple-oats-smoothie-recipe"
+      }
+    }
+  ]
+}
