@@ -15,7 +15,7 @@ const Dropdown = ({ handleSubmit }) => {
 
   return (
     <div className='dropdown-container'>
-      <h1 className='dropdown-title'>Choose 3 ingredients:</h1>
+      <h1 className='dropdown-title'>Choose 3 ingredients to find recipes:</h1>
         <select className='dropdown-box' onChange={ event => setIngredient1(event.target.value) }>
           { ingredients }
         </select>
