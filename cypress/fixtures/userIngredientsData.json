@@ -1,0 +1,28 @@
+{
+  "hits": [
+    {
+    "recipe": {
+      "label": "Feta Salsa recipes",
+      "image": "https://www.edamam.com/web-img/3eb/3ebe1454d0d33d8afe151f081ab4e846",
+      "source": "Smitten Kitchen",
+      "url": "https://smittenkitchen.com/2008/12/feta-salsa/"
+      }
+    },
+    {
+    "recipe": {
+      "label": "Sauteed Chicken with Tomatoes, Olives, and Feta",
+      "image": "https://www.edamam.com/web-img/0fa/0fa7f8208d484f6c934a13b205fb3fe4.jpg",
+      "source": "Epicurious",
+      "url": "https://www.epicurious.com/recipes/food/views/sauteed-chicken-with-tomatoes-olives-and-feta-108456"
+      }
+    },
+    {
+    "recipe": {
+      "label": "Whole Wheat Spaghetti Salad With Grilled Zucchini, Kalamata Olives, and Feta Recipe",
+      "image": "https://www.edamam.com/web-img/5c8/5c871bb5503533565efdb4b4c4bd6fab.jpg",
+      "source": "Serious Eats",
+      "url": "http://www.seriouseats.com/recipes/2014/07/whole-wheat-spaghetti-salad-grilled-zucchini-olives-feta-recipe.html"
+      }
+    }
+  ]
+}

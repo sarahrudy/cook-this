@@ -1,33 +1,17 @@
-import React, { useState } from 'react'
-import Recipes from '../Recipes/Recipes'
+import React from 'react'
 import './RecipeCard.css'
+import { Link } from 'react-router-dom'
 
-const RecipeCard = ({ label, image }) => {
-  const [ hover, setHover ] = useState(false)
-
-  const handleMouseEnter = () => {
-    setHover(true)
-  }
-
-  const handleMouseLeave = () => {
-    setHover(false)
-  }
+const RecipeCard = ({ label, image, url }) => {
 
   return (
     <div className='recipe-card'>
-      <article className='recipe-card-container'>
-        {hover 
-        ?
-        <h1>hi</h1>
-        :
-        <>
-        <p className='recipe-card-title'>{ label }</p>
-        <img className='recipe-card-image' src={ image } alt='recipe'
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        ></img> 
-        </> }
-      </article>
+      <a href={ url } target="_blank" rel="noopener noreferrer">
+        <article className='recipe-card-container'>
+          <p className='recipe-card-title'>{ label }</p>
+          <img className='recipe-card-image' src={ image } alt='recipe'></img>
+        </article>
+      </a>
     </div>
   )
 }

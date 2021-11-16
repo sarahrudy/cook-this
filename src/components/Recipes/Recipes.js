@@ -11,7 +11,7 @@ const Recipes  = ({ searchedRecipes }) => {
           key={ i }
           label={ recipe.recipe.label }
           image={ recipe.recipe.image }
-          // add onClick here to take user to url of recipe on web
+          url={ recipe.recipe.url }
         />
       </div>
     )
@@ -21,7 +21,7 @@ const Recipes  = ({ searchedRecipes }) => {
     <>
     <div className='recipes-container'>{ recipeCard }</div>
     <Link to='/'>
-      <button className='recipes-btn'>CLICK TO GO HOME</button>
+      <button className='recipes-btn'>HOME</button>
     </Link>
     </>
   )
