@@ -1,6 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './RecipeCard.css'
-import { Link } from 'react-router-dom'
 
 const RecipeCard = ({ label, image, url }) => {
 
@@ -16,4 +16,11 @@ const RecipeCard = ({ label, image, url }) => {
   )
 }
 
+RecipeCard.propTypes = {
+  label: PropTypes.string,
+  image: PropTypes.string,
+  url: PropTypes.string
+}
+
 export default RecipeCard 
+
