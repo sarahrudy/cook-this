@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - node
+notifications:
+  email: false
+deploy:
+  provider: heroku
+  project: ./build/
+  domain: https://cook-this-app.herokuapp.com/
