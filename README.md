@@ -3,7 +3,7 @@
 # Cook This
 `Cook This` is designed for students who need to make something quick and easy. It allows a user to choose from a list of 20 popular ingredients and returns a recipe that includes those ingredients. Once the user finds a recipe they're interested in, they can click on the image and it will take them to the url linked to that recipe with more specific cooking instructions.
 
-The app features a responsive design which can be viewed on mobile devices. It has also implements end-to-end cypress testing. 
+The app features a responsive design which can be viewed on mobile devices with end-to-end cypress testing. 
 
 ## API 
 This app uses the [Edamam API](https://developer.edamam.com/edamam-recipe-api) which scrapes the web for recipes which match a keyword, or in this case, an ingredient. 
