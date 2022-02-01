@@ -34,7 +34,7 @@ This app uses the [Edamam API](https://developer.edamam.com/edamam-recipe-api) w
 - Fork this web app to your own Github account
 - Clone the repository to your local machine
 - `cd` into the file
-- Run `npm install`.
+- Run `npm install`
 - Run `npm start` and visit `localhost:3000`
 
 ## Future Additions
