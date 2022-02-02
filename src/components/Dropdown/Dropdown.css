@@ -7,7 +7,7 @@
   border-radius: 5px;
   border: 1px solid black;
   margin: 30px;
-  width: 90%;
+  width: 50%;
 }
 
 .dropdown-title {
@@ -31,6 +31,7 @@
 .dropdown-btn {
   width: 25%;
   margin: 20px;
+  padding: 10px;
   font-weight: bold;
 }
 
@@ -45,6 +46,10 @@
 }
 
 @media screen and (max-width: 400px) {
+  .dropdown-container {
+    width: 90%;
+  }
+
   .dropdown-title {
     font-size: 15px;
   }
